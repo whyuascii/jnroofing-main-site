@@ -1,0 +1,16 @@
+version: 0.1
+
+phases:
+  pre_build:
+    commands:
+      - echo Installing npm dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Starting Build
+      - npm run sitemap && npm run build
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: build

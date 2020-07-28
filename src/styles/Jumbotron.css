@@ -1,0 +1,39 @@
+.jumbo {
+  height: 95vh;
+
+  @media screen and (max-width: 522px) {
+    height: 30vh;
+  }
+  @media screen and (max-width: 400px) {
+    height: 25vh;
+  }
+}
+
+.background-img {
+  background-image: linear-gradient(
+      rgba(75, 75, 77, 0.6),
+      rgba(75, 75, 77, 0.6)
+    ),
+    url("../assets/jumbo-roof-img.png");
+  background-size: cover;
+}
+.center-text {
+  padding-top: 15vh;
+}
+
+@media screen and (max-width: 522px) {
+  .center-text {
+    padding-top: 8vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .center-text {
+    padding-top: 5vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .center-text {
+    padding-top: 4vh;
+  }
+}
