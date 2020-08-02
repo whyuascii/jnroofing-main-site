@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Nav, Navbar as ReactBar } from "react-bootstrap";
 import "../styles/NaviBar.css";
-import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import Image from "react-bootstrap/Image";
 import Logo from "../assets/jn-logo.png";
 
@@ -9,30 +9,17 @@ export class NaviBar extends Component {
   render() {
     return (
       <div>
-        <ReactBar
-          collapseOnSelect
-          expand="lg"
-          fixed="top"
-          bg="light"
-          variant="light"
-        >
+        <ReactBar collapseOnSelect expand="lg" fixed="top" variant="dark">
           <ReactBar.Brand href="/">
-            <Image src={Logo} className="ml-5 navi-brand-img" />
+            <Image src={Logo} className="navi-brand-img" />
           </ReactBar.Brand>
           <ReactBar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
-              {/* <Nav.Item>
-                <Nav.Link href="/about">About</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/projects">Projects</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/contact">Contact </Nav.Link>
-              </Nav.Item> */}
-            </Nav>
+            <Nav className="mr-auto"></Nav>
             <Nav>
+              <Nav.Item>
+                <Nav.Link href="/">Home</Nav.Link>
+              </Nav.Item>
               <Nav.Item>
                 <Nav.Link href="/services">Our Services</Nav.Link>
               </Nav.Item>
@@ -46,7 +33,10 @@ export class NaviBar extends Component {
                 <Nav.Link href="/contact-us">Contact Us </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/contact-us">407-300-0479 </Nav.Link>
+                <Nav.Link className="ml-5 navi-phone" href="/contact-us">
+                  {" "}
+                  <FaPhoneAlt /> 407-300-0479{" "}
+                </Nav.Link>
               </Nav.Item>
             </Nav>
           </ReactBar.Collapse>

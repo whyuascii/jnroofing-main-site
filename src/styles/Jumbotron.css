@@ -1,39 +1,48 @@
-.jumbo {
-  height: 95vh;
-
-  @media screen and (max-width: 522px) {
-    height: 30vh;
-  }
-  @media screen and (max-width: 400px) {
-    height: 25vh;
-  }
-}
-
 .background-img {
   background-image: linear-gradient(
-      rgba(75, 75, 77, 0.6),
-      rgba(75, 75, 77, 0.6)
+      rgba(34, 34, 34, 0.7),
+      rgba(34, 34, 34, 0.7)
     ),
-    url("../assets/jumbo-roof-img.png");
+    url("../assets/jumbo-roof-img.jpg");
   background-size: cover;
+  color: white;
 }
-.center-text {
+.text-padding {
   padding-top: 15vh;
 }
 
 @media screen and (max-width: 522px) {
-  .center-text {
+  .text-padding {
     padding-top: 8vh;
   }
 }
 @media screen and (max-width: 400px) {
-  .center-text {
+  .text-padding {
     padding-top: 5vh;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .center-text {
+  .text-padding {
     padding-top: 4vh;
   }
+}
+
+.center-jumbo-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.main-jumbo-text {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.sub-jumbo-text {
+  font-weight: 700;
+  color: rgb(15, 189, 86);
 }

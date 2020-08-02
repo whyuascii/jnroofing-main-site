@@ -1,3 +1,53 @@
 .navi-brand-img {
   width: 25%;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 522px) {
+  .navi-brand-img {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navi-brand-img {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navi-brand-img {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 220px) {
+  .navi-brand-img {
+    margin-left: 0rem;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid rgb(15, 189, 86);
+
+  background-color: rgb(34, 34, 34) !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.2em !important;
+}
+
+.nav-link:hover {
+  color: rgb(15, 189, 86) !important;
+  border-bottom: 1px solid rgb(15, 189, 86) !important;
+}
+.navi-phone:hover {
+  color: white !important;
+  border-bottom: none !important;
+  cursor: default;
+}
+
+.nav-item > a,
+a.navbar-brand,
+a.nav-link {
+  border-bottom: none !important;
 }
