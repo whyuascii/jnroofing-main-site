@@ -1,0 +1,19 @@
+.footer-background {
+  background: rgb(37, 37, 37);
+  color: rgb(176, 176, 176);
+}
+
+.footer-nav {
+  padding-top: 0 !important;
+  color: inherit !important;
+}
+
+.footer-mini-nav {
+  justify-content: flex-end !important;
+}
+
+@media (max-width: 992px) {
+  .footer-mini-nav {
+    justify-content: center !important;
+  }
+}

@@ -8,7 +8,9 @@ export default class Layout extends Component {
   }
   render() {
     return (
-      <Container className="mt-5 mobile-page">{this.props.children}</Container>
+      <Container className="mt-5 mobile-page" nogutters="true">
+        {this.props.children}
+      </Container>
     );
   }
 }

@@ -1,9 +1,9 @@
 .background-img {
   background-image: linear-gradient(
-      rgba(34, 34, 34, 0.7),
-      rgba(34, 34, 34, 0.7)
+      rgba(21, 21, 21, 0.7),
+      rgba(21, 21, 21, 0.7)
     ),
-    url("../assets/jumbo-roof-img.jpg");
+    url("../assets/roof-4125765_1920.jpg");
   background-size: cover;
   color: white;
 }
@@ -37,12 +37,6 @@
   transform: translate(-50%, -50%);
 }
 
-.main-jumbo-text {
-  font-size: 5rem;
-  font-weight: 700;
-}
-
 .sub-jumbo-text {
-  font-weight: 700;
-  color: rgb(15, 189, 86);
+  color: rgb(133, 194, 64);
 }

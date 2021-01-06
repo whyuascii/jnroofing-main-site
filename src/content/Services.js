@@ -1,166 +1,189 @@
 import React, { Component } from "react";
+import CardColumns from "react-bootstrap/CardColumns";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
+import ListGroup from "react-bootstrap/ListGroup";
+import Row from "react-bootstrap/Row";
+import Asphalt from "../assets/asphalt.jpg";
+import Gutters from "../assets/gutters.jpg";
+import Metal from "../assets/metal-roof.jpg";
+import NewRoof from "../assets/newroof.jpg";
+import Repair from "../assets/repairshome.jpg";
+import Shingle from "../assets/shingle-roof.jpg";
+import Synthetic from "../assets/synthetic.jpg";
+import Tile from "../assets/tile-roof.jpg";
+import TPO from "../assets/tpo.jpg";
+import Cards from "../components/Cards";
 import Layout from "../components/Layout";
-import Container from "react-bootstrap/Container";
-import Work from "../aboutContent/Work";
-import Skills from "../aboutContent/Skills";
-import Education from "../aboutContent/Education";
+import MiniContact from "../components/MiniContact";
 import "../styles/About.css";
 
 export default class About extends Component {
   render() {
-    const education = [
+    const roofs = [
       {
-        title: "BA in Computer Science",
-        location: "Rollins",
-        where: "Winter Park, FL",
-        from: "08/2014",
-        to: "12/2017",
+        title: "Shingle ",
+        img: Asphalt,
+        imgAlt: "A House with shingles type of roof",
+        details:
+          "Cost-effective • Durable • Variety of Colors and Styles • Suitable to Wide Range of Temperatures",
       },
       {
-        title: "Security+",
-        location: "CompTIA",
-        from: "07/2018",
-        to: "07/2021",
+        title: "Metal ",
+        img: Metal,
+        imgAlt: "Metal Roof",
+        details:
+          "Low Maintenance • Environmentally Friendly • Energy Efficient • Can Be Repainted",
       },
       {
-        title: "AWS CCP",
-        location: "AWS",
-        from: "07/2020",
-        to: "07/2023",
-      },
-    ];
-
-    const work = [
-      {
-        location: "Attain LLC",
-        title: "Sr. Associate",
-        where: "Remote",
-        from: "06/20",
-        to: "Current",
-        detail: [
-          "Developed and Maintained a microservice cloud-ready Biometrics application",
-        ],
-        technology: ["SpringBoot", "AWS"],
-        language: ["Java", "JavaScript", "SQL"],
+        title: "Tile ",
+        img: Tile,
+        imgAlt: "Tile Roof",
+        details:
+          "Durable • Variety of Colors and Styles • Maintain Color • Limited Maintenance",
       },
       {
-        location: "Adapt Forward",
-        title: "Full Stack DevOps Software Engineer",
-        where: "Remote",
-        from: "01/18",
-        to: "5/20",
-        detail: [
-          "Designed, Architecture, managed, contributed to a microservice application following core software principles.",
-          "Mentored multiple other developers overcome roadblocks and assist in their development goals.",
-          "Collaborated with Sr Developers and customers to gather requirements and user acceptance criteria. Additionally, transition those requirements to create and manage sprints.",
-        ],
-        technology: [
-          "AWS",
-          "Flask",
-          "Pyramid",
-          "ExpressJS",
-          "Angular7",
-          "MySQL",
-          "PostgreSQL",
-          "Docker",
-        ],
-        language: ["Python", "TypeScript", "JavaScript", "SQL"],
+        title: "Synthetic Tile ",
+        img: Synthetic,
+        imgAlt: "Slate Roof",
+        details:
+          "Natural Appearance • Fire Resistance • Low Maintenance • Long Life Expectancy",
       },
       {
-        location: "DHS/CBP",
-        title: "Software Engineer",
-        where: "Remote",
-        from: "8/15",
-        to: "12/17",
-        detail: [
-          "Developed a modern, responsive, and accessibility website for the public domain as well as an internal enterprise tool that could be used on any device.",
-          "Became a key member in evaluating, containerizing, decoupling, and refactoring 90 different internal application which would transition from on-premise to the cloud.",
-          "Refactored multiple applications to stratify security standards, responsiveness, and configurable for cloud deployment.",
-        ],
-        technology: [
-          "SpringBoot",
-          "Angular 4",
-          "Flask",
-          "Django",
-          "Oracle",
-          "MySQL",
-          "Ionic/Cordova/PhoneGap",
-          "Docker",
-        ],
-        language: ["Python", "Java", "JavaScript", "TypeScript", "SQL"],
-      },
-      {
-        location: "DHS/CBP",
-        title: "Technical Specialist",
-        where: "Orlando, FL",
-        from: "10/13",
-        to: "8/14",
-        detail: [
-          "The core technology expert that not only adopted a tightly coupled legacy MS Access Database that was dependent on MS spreadsheets but overhauled the entire system into a modern web application.",
-          "Transformed Cost Recovery Model (CRM) design requirements into a fully functioning prototype system capable of calculating service pricing for multiple customers based on a complex set of modifiable recovery scenarios and parameters. This system integrates financial, service, asset, and utilization data for providers, suppliers, and customers.",
-          "Coded and Maintained a database the was used to manage and track land mobile radio assets and configuration across the nation.",
-        ],
-        technology: ["SpringBoot", "MySQL", "Access"],
-        language: ["Java", "JavaScript", "VBA"],
+        title: "TPO ",
+        img: TPO,
+        imgAlt: "TPO Roof",
+        details:
+          "Cost-effective • Durable • Energy Efficient • Corrosion and Mold Resistant",
       },
     ];
 
     return (
-      <Layout>
-        <h3 className="font-weight-bold bold-text"> Who Is This Guy?</h3>
-        <hr />
-        <Container className="background-text pt-3 pb-3 mb-4">
+      <div>
+        <Layout>
+          <h2 className="font-weight-bold">Services and Roof Types</h2>
           <p>
-            Agile trained Full-Stack DevOps Software Engineer with a complete
-            understanding of the software development life-cycle process. Versed
-            in several programming languages, emerging technology, cloud
-            computing, Microservices, containerization, and a variety of
-            frameworks. I am proactive, results-driven, and a problem solver who
-            is innovative, resourceful, and comfortable with risk-taking.
+            From roofing and gutters to repairs and skylights, DuraVerde Roofing
+            is a full-service contractor serving for a multitude of different
+            roof types. Review our different services and types of roofs our
+            team works on below.
           </p>
-          <p>
-            More than 6 years of programming and enterprise application
-            development experience.
-          </p>
-        </Container>
-
-        <h3 className="font-weight-bold bold-text"> What's The Latest?</h3>
-        <hr />
-        <Container className="background-text pt-3 pb-3 mb-4">
-          <p>
-            Currently, at Attain, I am a Sr. Associate working with USCIS as a
-            Full-Stack Developer. In this position, I am taking my microservice
-            and containerization background to assist in developing an
-            enterprise-level application utilizing AWS and open source tools,
-            Machine Learning, and Big Data.
-            <br />
-            <br />
-            Outside of Attain, I explore a multitude of different technologies
-            (ie Neo4J, GraphQL, Web Assembly), languages (ie GoLang, Rust), and
-            side projects (Tricoder Security, a SOAR/SIEM product)
-          </p>
-        </Container>
-
-        <h3 className="font-weight-bold bold-text">Skills?</h3>
-        <hr />
-        <Container className="background-text pt-3 pb-3 mb-4">
-          <Skills />
-        </Container>
-
-        <h3 className="font-weight-bold bold-text">Where Have You Worked?</h3>
-        <hr />
-        <Container className="background-text pt-3 pb-3 mb-4">
-          <Work jobs={work} />
-        </Container>
-
-        <h3 className="font-weight-bold bold-text text-wrap">
-          Any Eduction, Training, Certifications?
-        </h3>
-        <hr />
-        <Container className="background-text pt-3 pb-3 mb-4">
-          <Education education={education} />
-        </Container>
-      </Layout>
+          <hr />
+          <br />
+          <h3 className="font-weight-bold">Roofing Services</h3>
+          <ListGroup variant="flush">
+            <ListGroup.Item>
+              <h4>Re-Roof</h4>
+              <Row xs={1} md={2} lg={2}>
+                <Col>
+                  <p>
+                    New Roof? No Problem! While all roofs have limited
+                    lifespans, Tip Top will always work to ensure you get the
+                    most out of your current roof. Should damage or wear be
+                    extensive or beyond repair, a replacement will be proposed.
+                    The team at Tip Top can guide you in selecting the best roof
+                    type for your home or business, based on functional needs,
+                    code requirements, and aesthetic preference. Our team has
+                    members that are skilled in the installation of all roof
+                    types, and each new roof is installed to ensure its long
+                    term success, keeping your property safe.
+                  </p>
+                </Col>
+                <Col>
+                  <Image src={Shingle} rounded fluid />
+                </Col>
+              </Row>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <h4>New Roof</h4>
+              <Row xs={1} md={2} lg={2}>
+                <Col>
+                  <Image src={NewRoof} rounded fluid />
+                </Col>
+                <Col>
+                  <p>
+                    DuraVerde knows that you want your new roof to be durable as
+                    well as beautiful. With our expertise and the quality
+                    roofing products we provide, you can rest assured that your
+                    residential roofing project will be all you hope for and
+                    more! DuraVerde as the organization, tools, and knowledge to
+                    ensure that your new roof is completed on time, within
+                    budget, and meets your expectation. Our team takes pride in
+                    ensure quality and satisfaction in our roofs.
+                  </p>
+                </Col>
+              </Row>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <h4>Repairs</h4>
+              <Row xs={1} md={2} lg={2}>
+                <Col>
+                  <p>
+                    Leaks, holes, and missing shingles can happen especially
+                    after a strong Floirda's storm. DuraVerde is here to help to
+                    ensure you stay dry a little longer. We'll get the job done
+                    efficiently and correctly, ensuring your roofing problems
+                    are taken care of with precision for long lasting results.
+                    If you sense that roof repairs may be done, don't ignore it.
+                    Neglecting to have your Florida roof repaired in a timely
+                    manner will translate into more costly repairs later. Roofs
+                    are built to last, but without the proper repairs and
+                    maintenance, even the best roof can suffer irreparable
+                    damages. Call DuraVerde J&N Roofing and Construction for a
+                    free inspection.
+                  </p>
+                </Col>
+                <Col>
+                  <Image src={Repair} rounded fluid />
+                </Col>
+              </Row>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <h4>Gutters</h4>
+              <Row xs={1} md={2} lg={2}>
+                <Col>
+                  <Image src={Gutters} rounded fluid />
+                </Col>
+                <Col>
+                  <p>
+                    Gutters may not be the most exciting project for your home,
+                    but installing a seamless gutter system is an economical and
+                    important home improvement that can offer you significate
+                    protection. Properly installed gutters keep damaging water
+                    away from your roof, your house or business and its
+                    foundation. This includes keeping moisture away from
+                    anywhere it shouldn't be. DuraVerde has a full-service,
+                    custom-made, rain gutter and downspout team offering
+                    hand-crafted,seamless and pre-painted aluminum including
+                    custom flashings and a variety of custom gutter profiles.
+                    Call DuraVerde to get a free quote today.
+                  </p>
+                </Col>
+              </Row>
+            </ListGroup.Item>
+          </ListGroup>
+        </Layout>
+        <MiniContact />
+        <Layout>
+          <p> </p>
+          <h3 className="font-weight-bold">
+            No Matter the Type of Roof, We've Got you Covered.
+          </h3>
+          <CardColumns>
+            {roofs.map((roof, i) => [
+              i > 0 && " ",
+              <Cards
+                key={i}
+                title={roof.title}
+                img={roof.img}
+                imgAlt={roof.imgAlt}
+                describe={roof.details}
+              />,
+            ])}
+          </CardColumns>
+        </Layout>
+        <MiniContact />
+      </div>
     );
   }
 }

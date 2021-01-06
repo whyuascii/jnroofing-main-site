@@ -11,7 +11,7 @@ const Sitemap = require("react-router-sitemap").default;
 function generateSitemap() {
   return (
     new Sitemap(router)
-      .build("https://www.eduardoverde.com")
+      .build("https://www.Duraverderoofing.com")
       //Save it wherever you want
       .save("./public/sitemap.xml")
   );

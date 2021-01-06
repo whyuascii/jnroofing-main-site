@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { NaviBar } from "./components/NaviBar";
-import { Home } from "./content/Home";
-import Services from "./content/Services";
-import Contact from "./content/Contact";
-import { NotFound } from "./content/NotFound";
-import { Projects } from "./content/Projects";
-import { CompanyProfile } from "./content/CompanyProfile";
 import { Helmet } from "react-helmet";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Footer } from "./components/Footer";
+import { NaviBar } from "./components/NaviBar";
+import { CompanyProfile } from "./content/CompanyProfile";
+import Contact from "./content/Contact";
+import { Home } from "./content/Home";
+import { NotFound } from "./content/NotFound";
+import Services from "./content/Services";
 
 export default class App extends Component {
   render() {
@@ -39,15 +39,12 @@ export default class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/services" component={Services} />
             <Route path="/company-profile" component={CompanyProfile} />
-            <Route path="/projects" component={Projects} />
+            {/* <Route path="/projects" component={Projects} /> */}
             <Route path="/contact-us" component={Contact} />
             <Route component={NotFound} status={404} />
           </Switch>
         </Router>
-        <p>
-          Footer Here with All rights to left & powered by Eduardo Verde, center
-          License and Insured with License Number, right sitemap, about, contact
-        </p>
+        <Footer />
       </React.Fragment>
     );
   }
