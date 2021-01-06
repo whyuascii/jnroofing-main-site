@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export default (
   <React.Fragment>
     <Router>
       <Switch>
-        <Route path="/about" />
-        <Route path="/contact" />
-        <Route path="/projects" />
+        <Route path="/services" />
+        <Route path="/company-profile" />
+        <Route path="/contact-us" />
       </Switch>
     </Router>
   </React.Fragment>
