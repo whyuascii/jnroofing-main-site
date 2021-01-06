@@ -102,10 +102,10 @@ export default class Contact extends Component {
               <small>
                 Email:{" "}
                 <a
-                  href="mailto:eduardo.eddy.verde94@gmail.com"
+                  href="mailto:info@duraverderoofing.com"
                   className="email-tag"
                 >
-                  eduardo.eddy.verde94@gmail.com
+                  info@duraverderoofing.com
                 </a>
               </small>
               <br />
