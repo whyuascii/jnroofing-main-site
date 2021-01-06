@@ -26,6 +26,9 @@
   .text-padding {
     padding-top: 4vh;
   }
+  .center-jumbo-text {
+    top: 60% !important;
+  }
 }
 
 .center-jumbo-text {

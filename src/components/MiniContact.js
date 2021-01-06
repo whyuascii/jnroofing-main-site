@@ -1,10 +1,13 @@
+import empty from "is-empty";
 import React, { Component } from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
+import validator from "validator";
 import "../styles/MiniContact.css";
+
 export default class MiniContact extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +15,7 @@ export default class MiniContact extends Component {
       validated: null,
       errors: {},
       name: "",
-      message: "",
+      phone: "",
       email: "",
       alert: false,
       alertType: "",
@@ -22,12 +25,70 @@ export default class MiniContact extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    const err = {};
+    this.setState({ errors: {} });
+
+    if (!validator.isEmail(this.state.email)) {
+      err.email = "Invalid email address";
+    }
+    if (validator.isEmpty(this.state.name)) {
+      err.name = "Name Is Required";
+    }
+    if (validator.isEmpty(this.state.phone)) {
+      err.phone = "Invalid Phone Number";
+    }
+
+    if (!empty(err)) {
+      this.setState({ errors: err });
+      this.setState({ validated: false });
+    } else {
+      this.setState({ validated: true });
+      fetch(
+        `https://0m5ny0xsk7.execute-api.us-east-1.amazonaws.com/prod/contactme`,
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Headers": "Content-Type",
+            "Access-Control-Allow-Methods": "OPTIONS,POST",
+          },
+          mode: "no-cors",
+          body: JSON.stringify({
+            name: this.state.name,
+            email: this.state.email,
+            message: `Contact Me at ${this.state.phone}`,
+          }),
+        }
+      )
+        .then((resp) => {
+          this.setState({
+            alert: true,
+            alertType: "success",
+            alertMessage: "Message Sent",
+          });
+          this.setState({
+            name: "",
+            phone: "",
+            email: "",
+            validated: null,
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+          this.setState({
+            alert: true,
+            alertType: "danger",
+            alertMessage: "Oh No! Error",
+          });
+        });
+    }
   }
 
   render() {
     return (
       <div className="justify-content-center pt-3 pb-3 mini-form-style ">
-        <Row className="justify-content-center ml-0 mr-0">
+        <Row className="justify-content-center ml-0 mr-0 text-center">
           <h2 className="font-weight-bold ">Request A Free Estimate Now!</h2>
         </Row>
         <Form

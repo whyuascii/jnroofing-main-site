@@ -1,7 +1,3 @@
-.fill-height {
-  height: 80vh !important;
-}
-
 .yellow-submit-button {
   color: #23272b !important;
   background-color: rgb(133, 194, 64) !important;
@@ -18,11 +14,19 @@ alert {
   text-align: center;
   display: contents !important;
 }
+@media screen and (max-width: 320px) {
+  .contact-header-second {
+    padding-left: 4em;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .yellow-submit-button {
     margin-right: 1rem;
     max-width: 45% !important;
+  }
+  .fill-height {
+    height: 78.5vh !important;
   }
 }
 
@@ -48,11 +52,6 @@ alert {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .contact-header-second {
-    padding-left: 4em;
-  }
-}
 .left-content {
   align-self: center;
   text-align: center;
