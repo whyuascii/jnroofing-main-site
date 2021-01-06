@@ -1,7 +1,8 @@
-import validator from "validator";
 import empty from "is-empty";
+import validator from "validator";
 
 var contactSubmit = function () {
+  console.log("fdsfdsafsaffa");
   const err = {};
   this.setState({ errors: {} });
 
@@ -20,21 +21,24 @@ var contactSubmit = function () {
     this.setState({ validated: false });
   } else {
     this.setState({ validated: true });
-    fetch(`${process.env.REACT_APP_API_DOMAIN}/contactme`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Methods": "OPTIONS,POST",
-      },
-      mode: "no-cors",
-      body: JSON.stringify({
-        name: this.state.name,
-        email: this.state.email,
-        message: this.state.message,
-      }),
-    })
+    fetch(
+      `https://0m5ny0xsk7.execute-api.us-east-1.amazonaws.com/prod/contactme`,
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Headers": "Content-Type",
+          "Access-Control-Allow-Methods": "OPTIONS,POST",
+        },
+        mode: "no-cors",
+        body: JSON.stringify({
+          name: this.state.name,
+          email: this.state.email,
+          message: this.state.message,
+        }),
+      }
+    )
       .then((resp) => {
         this.setState({
           alert: true,

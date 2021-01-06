@@ -165,7 +165,6 @@ export default class About extends Component {
         </Layout>
         <MiniContact />
         <Layout>
-          <p> </p>
           <h3 className="font-weight-bold">
             No Matter the Type of Roof, We've Got you Covered.
           </h3>

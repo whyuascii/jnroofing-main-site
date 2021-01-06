@@ -69,19 +69,21 @@ export class Home extends Component {
           </Row>
           <br />
           <Row>
-            <p>
-              <ListGroup variant="flush">
-                <ListGroup.Item>
+            <ListGroup variant="flush">
+              <ListGroup.Item>
+                <p>
                   License Number: #CCC1325941 - Reliable – Our company offers
                   year round roofing and repair services for our clients.
-                </ListGroup.Item>
-                <ListGroup.Item>
+                </p>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <p>
                   Flexible: Fully compliant with your procedures and happy to
                   make any accommodations for your needed roofing repairs and
                   services.
-                </ListGroup.Item>
-              </ListGroup>
-            </p>
+                </p>
+              </ListGroup.Item>
+            </ListGroup>
           </Row>
         </Layout>
         <div className="section-height h-100">

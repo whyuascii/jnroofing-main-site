@@ -25,7 +25,7 @@ export default class Contact extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-
+    console.log("dfsafsf");
     const err = {};
     this.setState({ errors: {} });
 
@@ -60,6 +60,7 @@ export default class Contact extends Component {
         }),
       })
         .then((resp) => {
+          console.log(resp);
           this.setState({
             alert: true,
             alertType: "success",
@@ -68,6 +69,7 @@ export default class Contact extends Component {
           this.setState({ name: "", message: "", email: "", validated: null });
         })
         .catch((error) => {
+          console.log(error);
           this.setState({
             alert: true,
             alertType: "danger",
