@@ -90,7 +90,12 @@ export default class About extends Component {
                   </p>
                 </Col>
                 <Col>
-                  <Image src={Shingle} rounded fluid />
+                  <Image
+                    src={Shingle}
+                    rounded
+                    fluid
+                    alt="Roof with shingles on it that has been replaced"
+                  />
                 </Col>
               </Row>
             </ListGroup.Item>
@@ -98,7 +103,7 @@ export default class About extends Component {
               <h4>New Roof</h4>
               <Row xs={1} md={2} lg={2}>
                 <Col>
-                  <Image src={NewRoof} rounded fluid />
+                  <Image src={NewRoof} rounded fluid alt="A brand new roof" />
                 </Col>
                 <Col>
                   <p>
@@ -134,7 +139,12 @@ export default class About extends Component {
                   </p>
                 </Col>
                 <Col>
-                  <Image src={Repair} rounded fluid />
+                  <Image
+                    src={Repair}
+                    rounded
+                    fluid
+                    alt="roof undergoing repairs with one roofer fixing a skylight"
+                  />
                 </Col>
               </Row>
             </ListGroup.Item>
@@ -142,7 +152,12 @@ export default class About extends Component {
               <h4>Gutters</h4>
               <Row xs={1} md={2} lg={2}>
                 <Col>
-                  <Image src={Gutters} rounded fluid />
+                  <Image
+                    src={Gutters}
+                    rounded
+                    fluid
+                    alt="gutters attached to a home"
+                  />
                 </Col>
                 <Col>
                   <p>

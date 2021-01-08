@@ -28,9 +28,16 @@ export default class App extends Component {
             content="florida roofing, roofing contractor, roof replacement company, roof repair services, central florida roofing, roof installers, roofers, orlando roofing"
           />
           <title>DuraVerde J&N Roofing and Construction</title>
-          <link rel="canonical" href="https://duraverderoofing.com/about" />
-          <link rel="canonical" href="https://duraverderoofing.com/projects" />
-          <link rel="canonical" href="https://duraverderoofing.com/contact" />
+          <link rel="canonical" href="https://duraverderoofing.com" />
+          <link rel="canonical" href="https://duraverderoofing.com/services" />
+          <link
+            rel="canonical"
+            href="https://duraverderoofing.com/company-profile"
+          />
+          <link
+            rel="canonical"
+            href="https://duraverderoofing.com/contact-us"
+          />
           <link rel="author" href="https://eduardoverde.com" />
         </Helmet>
         <NaviBar />

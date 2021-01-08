@@ -64,7 +64,7 @@ export class Home extends Component {
               </p>
             </Col>
             <Col>
-              <Image src={ToolBelt} rounded fluid />
+              <Image src={ToolBelt} rounded fluid  alt="ToolBelt on a Roofing for Repairs"/>
             </Col>
           </Row>
           <br />

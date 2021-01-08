@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Nav, Navbar as ReactBar } from "react-bootstrap";
-import "../styles/NaviBar.css";
-import { FaPhoneAlt } from "react-icons/fa";
 import Image from "react-bootstrap/Image";
+import { FaPhoneAlt } from "react-icons/fa";
 import Logo from "../assets/jn-logo.png";
+import "../styles/NaviBar.css";
 
 export class NaviBar extends Component {
   handleSelect = (eventKey) => console.log(`selected ${eventKey}`);
@@ -13,7 +13,11 @@ export class NaviBar extends Component {
       <div>
         <ReactBar collapseOnSelect expand="lg" fixed="top">
           <ReactBar.Brand href="/">
-            <Image src={Logo} className="navi-brand-img" />
+            <Image
+              src={Logo}
+              className="navi-brand-img"
+              alt="DuraVerde JN Roofing and Construction Logo"
+            />
           </ReactBar.Brand>
           <ReactBar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBar.Collapse id="responsive-navbar-nav">
@@ -39,14 +43,13 @@ export class NaviBar extends Component {
               </Nav.Item> */}
               <Nav.Item>
                 <Nav.Link eventKey="4" href="/contact-us">
-                  Contact Us{" "}
+                  Contact Us
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link className="ml-5 navi-phone" href="/contact-us">
-                  {" "}
                   <FaPhoneAlt />
-                  407-300-0479{" "}
+                  407-300-0479
                 </Nav.Link>
               </Nav.Item>
             </Nav>
