@@ -26,18 +26,11 @@ export class CompanyProfile extends Component {
               We service commercial and residential roofs with complete
               knowledge and expertise. Our experience and craftsmanship set us
               apart from our competition. We specialize in new roofs, re-roofs,
-              tear offs, leaks repairs, and rood decking replacement. We also
+              tear offs, leaks repairs, and roof decking replacement. We also
               offer roof inspections, roof repairs, and variety of roofing types
               including asphalt roofs, flat roofs, hip roofs, and gable roofs.
             </p>
-            <p>
-              We service commercial and residential roofs with complete
-              knowledge and expertise. Our experience and craftsmanship set us
-              apart from our competition. We specialize in new roofs, re-roofs,
-              tear offs, leaks repairs, and rood decking replacement. We also
-              offer roof inspections, roof repairs, and variety of roofing types
-              including asphalt roofs, flat roofs, hip roofs, and gable roofs.
-            </p>
+
             <p>
               We also understand that project success and client satisfaction
               are the result of the quality of the final product. Our clients

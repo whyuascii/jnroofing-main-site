@@ -48,7 +48,7 @@ export class Home extends Component {
             <Col>
               <p>
                 DuraVerde J&N Roofing and Construction is your residential and
-                commercial Roofing Contractor serving the needs of Florida. We
+                commercial Roofing Contractor serving all of Florida. We
                 service all types of commercial and residential projects with
                 complete knowledge and expertise. Our experience set us apart
                 from our competition. We specialized in all types of
@@ -64,7 +64,12 @@ export class Home extends Component {
               </p>
             </Col>
             <Col>
-              <Image src={ToolBelt} rounded fluid  alt="ToolBelt on a Roofing for Repairs"/>
+              <Image
+                src={ToolBelt}
+                rounded
+                fluid
+                alt="ToolBelt on a Roofing for Repairs"
+              />
             </Col>
           </Row>
           <br />
@@ -72,14 +77,20 @@ export class Home extends Component {
             <ListGroup variant="flush">
               <ListGroup.Item>
                 <p>
-                  License Number: #CCC1325941 - Reliable – Our company offers
-                  year round roofing and repair services for our clients.
+                  License Number: #CCC1325941 - We are a licensed and fully
+                  insured company meaning you are in safe hands.
                 </p>
               </ListGroup.Item>
               <ListGroup.Item>
                 <p>
-                  Flexible: Fully compliant with your procedures and happy to
-                  make any accommodations for your needed roofing repairs and
+                  <b>Reliable:</b> Our company offers year round roofing and
+                  repair services for our clients.
+                </p>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <p>
+                  <b>Flexible:</b> Fully compliant with Florida State Codes and
+                  happy to make any accommodations for your roofing repairs and
                   services.
                 </p>
               </ListGroup.Item>

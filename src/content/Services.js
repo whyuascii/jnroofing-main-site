@@ -64,9 +64,8 @@ export default class About extends Component {
           <h2 className="font-weight-bold">Services and Roof Types</h2>
           <p>
             From roofing and gutters to repairs and skylights, DuraVerde Roofing
-            is a full-service contractor serving for a multitude of different
-            roof types. Review our different services and types of roofs our
-            team works on below.
+            is a full-service contractor serving a multitude of different
+            roof types.
           </p>
           <hr />
           <br />
@@ -78,10 +77,10 @@ export default class About extends Component {
                 <Col>
                   <p>
                     New Roof? No Problem! While all roofs have limited
-                    lifespans, Tip Top will always work to ensure you get the
+                    lifespans, DuraVerde Roofing will always work to ensure you get the
                     most out of your current roof. Should damage or wear be
                     extensive or beyond repair, a replacement will be proposed.
-                    The team at Tip Top can guide you in selecting the best roof
+                    The team at DuraVerde Roofing can guide you in selecting the best roof
                     type for your home or business, based on functional needs,
                     code requirements, and aesthetic preference. Our team has
                     members that are skilled in the installation of all roof
@@ -111,9 +110,9 @@ export default class About extends Component {
                     well as beautiful. With our expertise and the quality
                     roofing products we provide, you can rest assured that your
                     residential roofing project will be all you hope for and
-                    more! DuraVerde as the organization, tools, and knowledge to
+                    more! DuraVerde has the organization, tools, and knowledge to
                     ensure that your new roof is completed on time, within
-                    budget, and meets your expectation. Our team takes pride in
+                    budget, and meets your expectations. Our team takes pride to
                     ensure quality and satisfaction in our roofs.
                   </p>
                 </Col>
@@ -129,7 +128,7 @@ export default class About extends Component {
                     ensure you stay dry a little longer. We'll get the job done
                     efficiently and correctly, ensuring your roofing problems
                     are taken care of with precision for long lasting results.
-                    If you sense that roof repairs may be done, don't ignore it.
+                    If you sense that roof repairs are needed, don't ignore it.
                     Neglecting to have your Florida roof repaired in a timely
                     manner will translate into more costly repairs later. Roofs
                     are built to last, but without the proper repairs and
@@ -163,7 +162,7 @@ export default class About extends Component {
                   <p>
                     Gutters may not be the most exciting project for your home,
                     but installing a seamless gutter system is an economical and
-                    important home improvement that can offer you significate
+                    important home improvement that can offer you significant
                     protection. Properly installed gutters keep damaging water
                     away from your roof, your house or business and its
                     foundation. This includes keeping moisture away from

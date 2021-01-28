@@ -90,16 +90,13 @@ export default class Contact extends Component {
           <Row xs={1} md={1} lg={2}>
             <Col className="left-content ">
               <p>
-                Get a free inspection and estimate by contacting us. Either fill
-                out the form or call/email us directly.
+                Get a free inspection and estimate by contacting us.
               </p>
               <p>
-                A roof is one of the most valuable components of your home or
+                A roof are one of the most valuable components of your home or
                 business. A cheap roof may be the most expensive thing you ever
                 buy. Our team are on hand to inspect, repair, and replace nearly
-                any type of roof. When you work with DuraVerde J&N Roofing and
-                Construction, you are working with a company who values safety
-                and integrity. Reach out today to schedule an inspection!
+                any type of roof. Reach out today to schedule an inspection!
               </p>
               <small>
                 Email:{" "}
