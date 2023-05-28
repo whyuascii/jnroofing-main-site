@@ -89,9 +89,7 @@ export default class Contact extends Component {
           <hr />
           <Row xs={1} md={1} lg={2}>
             <Col className="left-content ">
-              <p>
-                Get a free inspection and estimate by contacting us.
-              </p>
+              <p>Get a free inspection and estimate by contacting us.</p>
               <p>
                 A roof are one of the most valuable components of your home or
                 business. A cheap roof may be the most expensive thing you ever
@@ -108,7 +106,7 @@ export default class Contact extends Component {
                 </a>
               </small>
               <br />
-              <small>Phone: 407-300-0479</small>
+              <small>Phone: 407-300-0474</small>
             </Col>
             <Col>
               <Form

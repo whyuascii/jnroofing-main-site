@@ -49,7 +49,7 @@ export class NaviBar extends Component {
               <Nav.Item>
                 <Nav.Link className="ml-5 navi-phone" href="/contact-us">
                   <FaPhoneAlt />
-                  407-300-0479
+                  407-300-0474
                 </Nav.Link>
               </Nav.Item>
             </Nav>
