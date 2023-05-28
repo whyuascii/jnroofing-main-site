@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { NaviBar } from "./components/NaviBar";
 import { CompanyProfile } from "./content/CompanyProfile";
-import Contact from "./content/Contact";
 import { Home } from "./content/Home";
 import { NotFound } from "./content/NotFound";
 import Services from "./content/Services";
@@ -47,7 +46,7 @@ export default class App extends Component {
             <Route path="/services" component={Services} />
             <Route path="/company-profile" component={CompanyProfile} />
             {/* <Route path="/projects" component={Projects} /> */}
-            <Route path="/contact-us" component={Contact} />
+            {/* <Route path="/contact-us" component={Contact} /> */}
             <Route component={NotFound} status={404} />
           </Switch>
         </Router>

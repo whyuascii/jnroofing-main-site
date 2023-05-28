@@ -1,9 +1,6 @@
 import empty from "is-empty";
 import React, { Component } from "react";
 import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import validator from "validator";
 import "../styles/MiniContact.css";
@@ -91,7 +88,7 @@ export default class MiniContact extends Component {
         <Row className="justify-content-center ml-0 mr-0 text-center">
           <h2 className="font-weight-bold ">Request A Free Estimate Now!</h2>
         </Row>
-        <Form
+        {/* <Form
           noValidate
           validated={this.state.validated}
           onSubmit={this.handleSubmit.bind(this)}
@@ -161,7 +158,7 @@ export default class MiniContact extends Component {
               </Button>
             </Col>
           </Form.Row>
-        </Form>
+        </Form> */}
 
         {this.state.alert && (
           <Alert

@@ -41,11 +41,11 @@ export class NaviBar extends Component {
                   Our Work
                 </Nav.Link>
               </Nav.Item> */}
-              <Nav.Item>
+              {/* <Nav.Item>
                 <Nav.Link eventKey="4" href="/contact-us">
                   Contact Us
                 </Nav.Link>
-              </Nav.Item>
+              </Nav.Item> */}
               <Nav.Item>
                 <Nav.Link className="ml-5 navi-phone" href="/contact-us">
                   <FaPhoneAlt />
