@@ -1,16 +1,32 @@
-version: 0.1
+version: 0.2
 
 phases:
-  pre_build:
-    commands:
-      - echo Installing npm dependencies...
-      - npm install
-  build:
-    commands:
-      - echo Starting Build
-      - npm run sitemap && npm run build
+    install:
+        runtime-versions:
+            nodejs: 18
+        commands:
+            - echo Installing dependencies...
+            - npm ci
+    pre_build:
+        commands:
+            - echo Running pre-build steps...
+            - npm run lint || true
+    build:
+        commands:
+            - echo Generating sitemap...
+            - node scripts/generate-sitemap.js
+            - echo Building site...
+            - npm run build
+    post_build:
+        commands:
+            - echo Optimizing assets...
+            - echo Build completed on `date`
 
 artifacts:
-  files:
-    - "**/*"
-  base-directory: build
+    files:
+        - "**/*"
+    base-directory: dist
+    cache:
+        paths:
+            - "node_modules/**/*"
+            - ".next/cache/**/*"
