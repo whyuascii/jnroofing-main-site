@@ -40,7 +40,7 @@ const Hero = () => {
                     <div className="flex flex-col sm:flex-row items-center gap-8 pt-8 justify-center">
                         <div className="flex flex-col items-center">
                             <span className="text-3xl font-bold text-verde-400">
-                                15+
+                                8+
                             </span>
                             <span className="text-sm uppercase tracking-wider text-gray-300">
                                 Years Experience
